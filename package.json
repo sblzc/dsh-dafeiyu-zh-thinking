@@ -1,0 +1,47 @@
+{
+  "name": "dsh-dafeiyu-zh-thinking",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Appends a one-line Chinese-reasoning reminder to the tail of every prepared request, because a long session's own English history outvotes a system-prompt rule.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sblzc/dsh-dafeiyu-zh-thinking.git"
+  },
+  "homepage": "https://github.com/sblzc/dsh-dafeiyu-zh-thinking",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "locale",
+    "icon.svg",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-llm": "*"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "reasoning",
+    "language",
+    "chinese"
+  ],
+  "license": "MIT"
+}

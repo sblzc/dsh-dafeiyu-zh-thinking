@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Chinese reasoning reminder",
+    "description": "Appends a one-line reminder to the tail of every request so the model reasons in Chinese."
+  }
+}
